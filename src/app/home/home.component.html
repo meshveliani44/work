@@ -1,0 +1,36 @@
+<section class="main">
+    <div class="user">
+        <h2>{{student.name}}</h2>
+        <p>Is student: {{student.isStudent ? 'yes' : "no"}}</p>
+        <p>{{student.email}}</p>
+        <button (click)="studentStatus(student)" class="first">get info</button>
+    </div>
+    <div class="interaction">
+        <div class="chngname">
+            <input type="text" [(ngModel)]="setUserName" placeholder="change name">
+            <button (click)="setName(setUserName)" class="butnset">set</button>
+        </div>
+        <div class="checkk">
+            <input type="checkbox" [(ngModel)]="student.isStudent">
+            <span>is a student ?</span>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<app-child></app-child>
